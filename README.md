@@ -16,7 +16,7 @@ The success of the proposal analyzed in [1] has been tested in a realistic 118-b
 
 ## References 📚
 
-[1] Salvador Pineda, Juan Miguel Morales and Asunción Jiménez-Cordero (2023). Learning-Assisted Optimization for
+[1] Pineda, S. Morales, J.M., and Jiménez-Cordero, A. (2023). Learning-Assisted Optimization for
 Transmission Switching. Submitted. Available here.
 
 [2] OASYS, Learning_Assisted_Optimization_for_Transmission_Switching, Github repository (https://github.com/groupoasys/Learning_Assisted_Optimization_for_Transmission_Switching), 2023.
