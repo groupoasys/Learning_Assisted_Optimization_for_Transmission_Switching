@@ -23,7 +23,7 @@ Transmission Switching. Submitted. Available [here](https://arxiv.org/abs/2304.0
 
 ## How to cite the repo and the paper? 📝
 
-If you want to cite paper [1] or this repo [[2]](https://github.com/groupoasys/Learning_Assisted_Optimization_for_Transmission_Switching), please use the following bib entry:
+If you want to cite paper [[1]](https://arxiv.org/abs/2304.07269) or this repo [[2]](https://github.com/groupoasys/Learning_Assisted_Optimization_for_Transmission_Switching), please use the following bib entry:
 
 * Article:
 ```
