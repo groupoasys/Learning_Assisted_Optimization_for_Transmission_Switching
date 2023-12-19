@@ -13,15 +13,22 @@ The success of the proposal analyzed in [[1]](https://arxiv.org/abs/2304.07269) 
 
 The first one is [case118Blumsak.m](https://drive.google.com/file/d/18KY6VY2atsSFLQ3sMD08mBOqHO_iNtTf/view?usp=sharing). It contains information about the network (nodes, lines, generators location, maximum flow capacity, etc).
 
-Then, three files containing the information of the data have been included. In these files, the results of the 500 instances generated for each of the three databases used in the paper can be found. The first columns contains the load values for the 118 buses. Next columns represent the optimal decision variables for the 186 lines. If the decision variable associated to a certain line is always 1, then, it means that this line belongs to the given spanning tree. Finally, last columns are associated to the optimal voltage angles for the 118 buses.
+Then, three files containing the information of the data have been included. In these files, the results of the 500 instances generated for each of the three databases used in the paper can be found. The first columns contain the load values for the 118 buses. The next columns represent the optimal decision variables for the 186 lines. If the decision variable associated with a certain line is always 1, then, it means that this line belongs to the given spanning tree. Finally, the last columns are associated with the optimal voltage angles for the 118 buses.
 
-The three cases detailed in the manuscript are: [unif10](https://drive.google.com/file/d/1nbC0vAG9rBqxLT12FRPHQgih-IxvbRIC/view?usp=sharing), [unif20](https://drive.google.com/file/d/1IgP4yWP_sPnAPKrT_OKLkZ-lofOMhO2b/view?usp=sharing) and [normal](https://drive.google.com/file/d/10Iey5suZdgL3Mt9qFT1McF7LEAHHA1wZ/view?usp=sharing).
+The three databases differ on the nodal demand $d_n$ values generated with three different probability distributions centered in the baseline demand $\widehat{d_n}$. The three cases detailed in the manuscript are:
+* [unif10](https://drive.google.com/file/d/1nbC0vAG9rBqxLT12FRPHQgih-IxvbRIC/view?usp=sharing): The demand levels are sampled using independent uniform distributions in the range
+[0.9 $\widehat{d_n}$, 1.1 $\widehat{d_n}$]
+* [unif20](https://drive.google.com/file/d/1IgP4yWP_sPnAPKrT_OKLkZ-lofOMhO2b/view?usp=sharing): The demand levels are sampled using independent uniform distributions in the range
+[0.8 $\widehat{d_n}$, 1.2 $\widehat{d_n}$]
+* [normal](https://drive.google.com/file/d/10Iey5suZdgL3Mt9qFT1McF7LEAHHA1wZ/view?usp=sharing): The demand levels are sampled using a multinormal distribution with the correlation matrix obtained from the demand time series available at [3].
 
 ## References 📚
 
 [1] Pineda, S. Morales, J.M., and Jiménez-Cordero, A. (2023). Learning-Assisted Optimization for Transmission Switching. Submitted. Available [here](https://arxiv.org/abs/2304.07269).
 
 [2] OASYS, Learning_Assisted_Optimization_for_Transmission_Switching, Github repository (https://github.com/groupoasys/Learning_Assisted_Optimization_for_Transmission_Switching), 2023.
+
+[3] Joswig-Jones, Trager, Ahmed Zamzam, and Kyri Baker. 2021. "OPFLearnData: Dataset for Learning AC Optimal Power Flow." NREL Data Catalog. Golden, CO: National Renewable Energy Laboratory. Last updated: December 12, 2023. DOI: 10.7799/1827404. 
 
 ## How to cite the repo and the paper? 📝
 
