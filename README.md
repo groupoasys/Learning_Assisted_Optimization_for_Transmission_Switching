@@ -13,14 +13,14 @@ The success of the proposal analyzed in [[1]](https://arxiv.org/abs/2304.07269) 
 
 The first one is `case118Blumsak.m`. It contains information about the network (nodes, lines, generators location, maximum flow capacity, etc).
 
-Then, three files containing the information of the data have been included. In these files, the results of the 500 instances generated for each of the three databases used in the paper can be found. The first columns contain the load values for the 118 buses. The next columns represent the optimal decision variables for the 186 lines. If the decision variable associated with a certain line is always 1, then, it means that this line belongs to the given spanning tree. Finally, the last columns are associated with the optimal voltage angles for the 118 buses.
+Then, three `.csv` files containing the information of the data have been included. In these files, the results of the 500 instances generated for each of the three databases used in the paper can be found. The first columns contain the load values for the 118 buses. The next columns represent the optimal decision variables for the 186 lines. If the decision variable associated with a certain line is always 1, then, it means that this line belongs to the given spanning tree. Finally, the last columns are associated with the optimal voltage angles for the 118 buses.
 
 The three databases differ on the nodal demand $d_n$ values generated with three different probability distributions centered in the baseline demand $\widehat{d_n}$. The three cases detailed in the manuscript are:
-* `unif10`: The demand levels are sampled using independent uniform distributions in the range
+* `unif10.csv`: The demand levels are sampled using independent uniform distributions in the range
 [0.9 $\widehat{d_n}$, 1.1 $\widehat{d_n}$]
-* `unif20`: The demand levels are sampled using independent uniform distributions in the range
+* `unif20.csv`: The demand levels are sampled using independent uniform distributions in the range
 [0.8 $\widehat{d_n}$, 1.2 $\widehat{d_n}$]
-* `normal`: The demand levels are sampled using a multinormal distribution with the correlation matrix obtained from the demand time series available at [3].
+* `normal.csv`: The demand levels are sampled using a multinormal distribution with the correlation matrix obtained from the demand time series available at [3].
 
 ## References 📚
 
