@@ -5,22 +5,22 @@
 The aim of this repository is to provide some details of the data sets used in paper [[1]](https://arxiv.org/abs/2304.07269). This article has been developed by some members of the [OASYS group](https://sites.google.com/view/groupoasys/home) thanks to the funding of the project [Flexanalytics](https://groupoasysflexanalytics.readthedocs.io/en/latest/). We suggest you to visit the related link to know more our research 😉
 
 ## How can I download the data? ⬇
-Please, click at this [link](https://drive.google.com/drive/folders/1krIjQFrX5BXmAUhJyVvfuZCeFLYSYI-D?usp=share_link).
+The data files are included in this repository.
 
 ## Summary 🧮📊📖
 
 The success of the proposal analyzed in [[1]](https://arxiv.org/abs/2304.07269) has been tested in a realistic 118-bus power system. The data comprises four files:
 
-The first one is [case118Blumsak.m](https://drive.google.com/file/d/18KY6VY2atsSFLQ3sMD08mBOqHO_iNtTf/view?usp=sharing). It contains information about the network (nodes, lines, generators location, maximum flow capacity, etc).
+The first one is `case118Blumsak.m`. It contains information about the network (nodes, lines, generators location, maximum flow capacity, etc).
 
 Then, three files containing the information of the data have been included. In these files, the results of the 500 instances generated for each of the three databases used in the paper can be found. The first columns contain the load values for the 118 buses. The next columns represent the optimal decision variables for the 186 lines. If the decision variable associated with a certain line is always 1, then, it means that this line belongs to the given spanning tree. Finally, the last columns are associated with the optimal voltage angles for the 118 buses.
 
 The three databases differ on the nodal demand $d_n$ values generated with three different probability distributions centered in the baseline demand $\widehat{d_n}$. The three cases detailed in the manuscript are:
-* [unif10](https://drive.google.com/file/d/1nbC0vAG9rBqxLT12FRPHQgih-IxvbRIC/view?usp=sharing): The demand levels are sampled using independent uniform distributions in the range
+* `unif10`: The demand levels are sampled using independent uniform distributions in the range
 [0.9 $\widehat{d_n}$, 1.1 $\widehat{d_n}$]
-* [unif20](https://drive.google.com/file/d/1IgP4yWP_sPnAPKrT_OKLkZ-lofOMhO2b/view?usp=sharing): The demand levels are sampled using independent uniform distributions in the range
+* `unif20`: The demand levels are sampled using independent uniform distributions in the range
 [0.8 $\widehat{d_n}$, 1.2 $\widehat{d_n}$]
-* [normal](https://drive.google.com/file/d/10Iey5suZdgL3Mt9qFT1McF7LEAHHA1wZ/view?usp=sharing): The demand levels are sampled using a multinormal distribution with the correlation matrix obtained from the demand time series available at [3].
+* `normal`: The demand levels are sampled using a multinormal distribution with the correlation matrix obtained from the demand time series available at [3].
 
 ## References 📚
 
@@ -85,5 +85,5 @@ author={OASYS},
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
- 
+
 
